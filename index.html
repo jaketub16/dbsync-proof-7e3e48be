@@ -9,7 +9,7 @@
 th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f2f0ea;position:sticky;top:0}
 .t{padding:2px 8px;border-radius:99px;font-weight:600;font-size:11px}.a{background:#d9efe0}.b{background:#e7f0d6}.c2,.c{}.x{background:#f3dcdc}
 span.c{background:#eee;border:0;padding:2px 8px}.why{color:var(--mut);max-width:260px}.scroll{overflow:auto;max-height:720px;border:1px solid var(--line);border-radius:12px}
-.note{border-left:3px solid var(--acc);padding:10px 16px;background:#fff;margin:14px 0}ul{padding-left:20px}@media(max-width:800px){.g{grid-template-columns:1fr 1fr}}
+.c.ok{background:#e3f4e8;border-color:#7cc394}.c.bad{background:#fbe4e2;border-color:#e08b84}.c.mid{background:#fdf4d6;border-color:#e3c35c}.bm{margin-top:8px;font-size:12px;font-weight:600;color:#444}td.no{color:#b3261e;font-weight:700}td.yes{color:#1f7a3a;font-weight:700}.note{border-left:3px solid var(--acc);padding:10px 16px;background:#fff;margin:14px 0}ul{padding-left:20px}@media(max-width:800px){.g{grid-template-columns:1fr 1fr}}
 </style></head><body><div class="w">
 <div class="k"><span class="brand">ALETTO</span> · Prepared for DBSync pilot review · Data pulled Oct 26, 2026</div>
 <h1>“Zero MQLs” vs. what the CRM actually shows</h1>
@@ -29,15 +29,23 @@ span.c{background:#eee;border:0;padding:2px 8px}.why{color:var(--mut);max-width:
 <p class="s">Ads: Meta via Windsor (DBSync Ad Account). Opt-ins, MQL and bookings: DBSync’s GHL. Calls: DBSync’s own activity reports (rep John R.; the timed export has 222 entries, 183 calls, Aug 13 – Sep 14). <b>MQL here = contact tagged “mql” by the CRM’s qualification workflow from form answers.</b></p>
 <div class="g">
 <div class="c"><div class="n">242,422</div><div class="s">ad impressions · $8,914 spend</div></div>
-<div class="c"><div class="n">4.07%</div><div class="s">CTR: 9,877 clicks</div></div>
-<div class="c"><div class="n">0.64%</div><div class="s">opt-in rate: 63 opt-ins ÷ clicks (Meta reported 64 leads)</div></div>
-<div class="c"><div class="n">52%</div><div class="s">MQL rate: 33 of 63 opt-ins</div></div>
-<div class="c"><div class="n">18%</div><div class="s">booking rate: 6 of 33 MQLs booked (9.5% of all opt-ins)</div></div>
-<div class="c"><div class="n">2.9 / 12</div><div class="s">calls per lead: 183 dials across 63 opt-ins. 22 people were ever called (17 match our 63 opt-ins); <b>5</b> got 12+ calls; 46 of 63 opt-ins show no call</div></div>
-<div class="c"><div class="n">1 of 63</div><div class="s">called within 10 minutes (Mac M., 9 min). Median first call for the 17 called: ~9 hours. No call activity after Sep 14.</div></div>
-<div class="c"><div class="n">0</div><div class="s">sales: no opportunities, deals or revenue in the report or CRM (none reported). 2 meetings noted by DBSync’s rep (Foram N., Julio J.)</div></div>
+<div class="c ok"><div class="n">4.07%</div><div class="s"><b>CTR: really good.</b> 9,877 clicks</div><div class="bm">Benchmark: above 1%</div></div>
+<div class="c bad"><div class="n">0.64%</div><div class="s"><b>Opt-in rate: low.</b> 63 opt-ins from 9,877 clicks (Meta reported 64 leads)</div><div class="bm">Benchmark: above 5%</div></div>
+<div class="c mid"><div class="n">52%</div><div class="s"><b>MQL rate: OK, not great.</b> 33 of 63 opt-ins</div><div class="bm">Benchmark: 60%</div></div>
+<div class="c ok"><div class="n">18%</div><div class="s"><b>Booking rate: fantastic.</b> 6 of 33 MQLs booked</div><div class="bm">Benchmark: about 15%</div></div>
+<div class="c bad"><div class="n">2.9</div><div class="s"><b>Calls per lead: 2.9.</b> Required: at least 12 (10–15 is the standard). DBSync did 2.9 (183 calls ÷ 63 leads). Only 5 leads got 12+ calls; 46 of 63 got no call at all.</div><div class="bm">Contract: at least 12 calls per lead</div></div>
+<div class="c bad"><div class="n">0 of 63</div><div class="s"><b>Called within 5 minutes: none.</b> Within 10 minutes: 1 of 63 (Mac M., 9 min). Typical first call for leads that got one: ~9 hours.</div><div class="bm">Benchmark: within 5 min · Contract: within 10 min</div></div>
+<div class="c bad"><div class="n">0</div><div class="s"><b>Sales opportunities: none.</b> No opportunities, deals or revenue in DBSync’s report or the CRM. (DBSync’s rep noted 2 meetings: Foram N., Julio J.)</div><div class="bm">None reported</div></div>
 </div>
-<div class="note"><b>What this means:</b> the ads did their job (4% CTR, 33 MQLs). Follow-up fell short of Section 4: 12 calls per lead was hit for 4 of 63 leads, calls stop after Sep 14 even though ~40 more leads came in, and none of these 183 calls were logged in the Aletto CRM, which the contract requires for 100% of attempts.</div>
+<div class="note"><b>What this means:</b> the ads did their job: high CTR and a strong booking rate. Follow-up did not: 2.9 calls per lead instead of 12, nobody called inside 5 minutes, calls stop after Sep 14 even though ~40 more leads came in, and none of the 183 calls were logged in the Aletto CRM.</div>
+
+<h2>Why 5 minutes matters</h2>
+<ul>
+<li><b>MIT / InsideSales.com Lead Response Management Study</b> (Dr. James Oldroyd, 2007; 15,000+ leads, 100,000+ call attempts, 6 companies): “The odds of contacting a lead if called in 5 minutes versus 30 minutes drop <b>100 times</b>. The odds of qualifying a lead if called in 5 minutes versus 30 minutes drop <b>21 times</b>.” Going from 5 to 10 minutes alone cuts the odds of contact <b>5x</b> and the odds of qualifying <b>4x</b>. Contact odds fall more than 10x in the first hour. <a href="https://content.marketingsherpa.com/heap/DG07SFSlides/LeadResponseManagementReport.pdf">Study report (PDF)</a> · <a href="https://web.archive.org/web/20090529010553/http://www.leadresponsemanagement.org/mit_study">archived study page</a></li>
+<li><b>Harvard Business Review, “The Short Life of Online Sales Leads”</b> (Oldroyd, McElheran &amp; Elkington, March 2011; 1.25 million leads, 42 US companies): firms that tried to reach a lead within an hour were “nearly <b>seven times</b> as likely to qualify the lead” as firms that waited even an hour longer, and “more than <b>60 times</b> as likely” as firms that waited 24 hours or more. <a href="https://hbr.org/2011/03/the-short-life-of-online-sales-leads">HBR article</a></li>
+<li>DBSync’s typical first call came about 9 hours after opt-in, and 46 of 63 leads were never called.</li>
+</ul>
+
 
 <h2>Business hours vs outside business hours</h2>
 <p class="s">Source: DBSync’s timed activity export (completed date/time per entry). <b>Assumed time zone: US Central</b>, because the rep converts meeting times to CST in his own notes (“11 AM EST (10 AM CST)”). Business hours = Mon–Fri 9am–5pm Central. Opt-in times come from GHL, converted to Central. The lead’s own time zone is not in the data.</p>
@@ -57,12 +65,24 @@ span.c{background:#eee;border:0;padding:2px 8px}.why{color:var(--mut);max-width:
 <p>Capital One · Apple · Holman · U.S. FDA (HHS) · Rockwell Automation · CDW · Hakkoda (IBM) · WV Dept. of Health &amp; Human Resources · North Mill Equipment Finance · Biscuitville · U.S. Army (civilian) · University of Arizona</p>
 <div class="note"><b>Capital One check:</b> lead Richard G. opted in Oct 18 with a corporate <code>@capitalone.com</code> address and reported 1,000+ employees; the CRM marks him “Moderate fit” and the qualification workflow tagged him “mql”. His title could not be confirmed publicly (the LinkedIn link DBSync's own team pasted in a CRM note on Oct 19 now returns 404). After that note, <b>no call, email or text from DBSync is logged.</b></div>
 
-<h2>What the contract actually says</h2>
-<ul>
-<li><b>The guarantee is 20 qualified meetings</b> (booked, attended, ICP-fit with BANT) <i>or</i> better ROI than trailing ad spend, “within the 16-week term”. It is not written as “20 MQLs”. “Verified MQL” is defined only as a lead meeting documented criteria and verified in the tracking stack.</li>
-<li>The refund applies only if DBSync “did not commit a material breach of Section 4 duties”, confirmed by CRM/tracking data, with a 5-business-day cure period after written notice.</li>
-<li>DBSync's Section 4 duties include: <b>contact new leads within 10 minutes</b> in business hours; <b>call each lead at least 12 times</b>; <b>record 100% of contact attempts in the Aletto CRM</b>; call booked meetings twice daily to confirm; daily CRM log-ins by the sales owner; keep $100–160/day ad budget.</li>
-</ul>
+<h2>What the contract says, word for word</h2>
+<p class="s">Source: AGF Pilot Program Agreement between Aletto LLC (“Growth Team”) and Rajeev Gupta of MYDBSYNC.COM (“Growth Partner”). Text is from the Jun 22, 2026 legal-review copy we hold. The signed copy in GHL Documents was not pulled for this page. Clause numbers follow the agreement’s own cross-references (“Section 2” Performance Guarantee, “Section 4” duties).</p>
+<div class="note"><b>Section 2, Performance Guarantee:</b> “Within the 16-week term, Growth Team will achieve either 20 additional qualified meetings, or An overall greater ROI from the ad spend Growth Partner is already spending on social media advertising in the trailing 6 months of performance. <b>If not achieved and Growth Partner did not commit a material breach Section 4 duties and was confirmed by objective CRM/tracking data and verified by Growth Team</b>, Growth Team refund your entire investment outlined in section 1 […] Any disputes regarding performance or compliance shall be subject to a 5-business-day cure period after written notice.”</div>
+<div class="note"><b>Definitions:</b> “Qualified Meeting: Booked meeting with an ICP-fit prospect who attends. This includes Budget, Authority or direct access to decision maker, Need and Timing.” The guarantee is 20 qualified meetings, not 20 MQLs.</div>
+<div class="note"><b>Section 1, payment terms:</b> “Price: $35,000 […] Option 1: $12,500 now, $12,500 1 month later (save $10k) · Option 2: $20,000 (save $15k).” “All Pilot payments credit toward a subsequent Aletto program.” Refund Policy: “Full refund within 5 days of initial payment, less incurred costs.” Late payment: “If a payment is more than 5 days late, services may be suspended until paid.”</div>
+<div class="note"><b>Section 12a, ROI Satisfaction Clause:</b> the guarantee is also “deemed fully satisfied” if the client books closed or in-contract revenue of 2x the fees from Aletto-generated leads tracked in the CRM. DBSync reported no opportunities or revenue, so this clause doesn’t come into play either way.</div>
+<h3>Section 4 duties vs what DBSync did</h3>
+<table><thead><tr><th>Requirement (verbatim)</th><th>What DBSync did</th><th>Met?</th></tr></thead><tbody>
+<tr><td>“Contact new leads within 10 minutes during business hours.”</td><td>1 of 63 within 10 minutes; 0 within 5. Of 14 leads who opted in during business hours, 11 were never called.</td><td class="no">Not met</td></tr>
+<tr><td>“Make repeated calls to each lead at least 12 times during the program flight.”</td><td>2.9 calls per lead. 5 of 63 leads reached 12 calls. 46 had none. No calls after Sep 14.</td><td class="no">Not met</td></tr>
+<tr><td>“Record 100 percent of contact attempts in the Growth Team CRM.”</td><td>0 calls logged in the Aletto CRM. The 183 calls only show up in DBSync’s own export.</td><td class="no">Not met</td></tr>
+<tr><td>“Contact all booked leads within 24 business hours.”</td><td>Only 1 of 6 booked leads has a logged manual contact in the CRM (an SMS 15 h 57 m after booking).</td><td class="no">Not met (per CRM)</td></tr>
+<tr><td>“Call all booked meetings manually to confirm appointment twice daily…”</td><td>No confirmation calls logged in the CRM for any of the 6 booked meetings.</td><td class="no">Not met (per CRM)</td></tr>
+<tr><td>“Daily (during the business week) log-ins to the CRM from the sales owner”</td><td>Not measured; login history wasn’t pulled.</td><td>Unknown</td></tr>
+<tr><td>“Maintain $100-$160/day in ad budget during the flight”</td><td>$8,914 over Aug 13 – Oct 23, about $124/day.</td><td class="yes">Met</td></tr>
+</tbody></table>
+<div class="note"><b>Bottom line:</b> Section 2 says the refund only applies if DBSync “did not commit a material breach [of] Section 4 duties,” confirmed by CRM/tracking data. DBSync missed at least three Section 4 duties: the 10-minute contact rule, 12 calls per lead, and logging 100% of attempts. So the Section 2 guarantee and refund do not apply. Separately, the Section 1 refund policy only covers the first 5 days after the initial payment.</div>
+
 
 <h2>Follow-up speed: the evidence</h2>
 <ul>
